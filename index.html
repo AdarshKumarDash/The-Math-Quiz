@@ -11,7 +11,6 @@
     <title>Math Quiz Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png">
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -27,8 +26,6 @@
                 <br>
                 <input id="player1_name" class="form-control" type="text" placeholder="Player1">
                 <br>
-                <span><input type="checkbox"></span>
-                <label>Keep me logged in</label>
             </div>
             <br>
             <div class="col-lg-4 col-md-6 col-sm-9 col-xs-12" id="player2div">
@@ -36,14 +33,18 @@
                 <br>
                 <input id="player2_name" class="form-control" type="text" placeholder="Player2">
                 <br>
-                <span><input type="checkbox"></span>
-                <label>Keep me logged in</label>
             </div>
             <br>
+            <span><input type="checkbox" id="my_checkbox" checked></span>
+            <label>Remember us</label>
+            <br>
             <button id="login" class="btn btn-primary" onclick="login()">Login</button>
+            <br><br>
+            <a onclick="navi()" id="remember"></a>
             </center>
         </center>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -40,11 +40,12 @@ function check() {
             if (answerturn == "Player2") {
                 player2_score = player2_score + 1;
                 document.getElementById("player2_score").innerHTML = player2_score;
+                window.alert(player2_name + " " + "scored 1 point");
             } else {
                 player1_score = player1_score + 1;
                 document.getElementById("player1_score").innerHTML = player1_score;
+                window.alert(player1_name + " " + "scored 1 point");
             }
-        }
         }
         if (questionturn == "Player1") {
             questionturn = "Player2";
@@ -61,4 +62,5 @@ function check() {
             document.getElementById("answerturn").innerHTML = "Answer Turn&nbsp; - " + player1_name;
         }
         document.getElementById("output").innerHTML = "";
+    }
     }
